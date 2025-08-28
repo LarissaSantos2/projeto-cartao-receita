@@ -1,0 +1,58 @@
+/* 1.reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* box-sizing é uma propriedade para evitar que os elementos saiam da caixa */
+}
+
+/* 2. estilos gerais para a página body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: justify;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 3. estilos para o cartão de receita */
+.recipe-card {
+  width: 350px; /* largura fixa do cartão */
+  background-color: #ffffff;
+  border-radius: 15px; /* bordas arredondadas */
+
+  /* Sombra mais sútil */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  /* Essa propriedade "corta" qualquer conteúdo filho ( como a imagem) que tente azar para fora dos cantos arredondados do card */
+  overflow: hidden;
+}
+
+/* 4. estilos para a imagem do cartão */
+.recipe-card img {
+  width: 100%; /* A imagem ocupa toda a largura do cartão */
+  display: block; /* renderiza a imagem como bloco */
+}
+
+/* 5. estilos para o conteúdo do texto do cartão */
+.recipe-content {
+  padding: 25px; /* Espaçamento interno */
+}
+
+.recipe-title {
+  font-size: 1.5rem; /* 24px */
+  color: #d72828;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.recpe-description {
+  font-size: 1rem; /* 16px */
+  color: #666;
+  line-height: 1.6; /* Espaçamento entre linhas */
+  margin-bottom: 0px;
+}
